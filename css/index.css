@@ -1,28 +1,30 @@
 body {
-    background-color: #1f1f1f;
-    color: #ffffff;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  user-select: none;   /* 텍스트 선택 방지 */
+  -webkit-user-drag: none; /* 이미지 드래그 방지 (크롬/사파리) */
 }
 
 .nav {
-    height: 80px;
-    display: flex;
-    justify-content: center;
+  height: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .tit_name {
-    width: 100%;
-    line-height: 68px;
-    font-size: 24px;
-    text-align: center;
+  width: 100%;
+  line-height: 68px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .nav_box {
   height: 80px;
   display: flex;
-  align-items : center;
+  align-items: center;
   justify-content: center;
-  border-top:1px solid #777777;
-  border-bottom:1px solid #777777;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
 }
 
 .nav_btn {
@@ -37,12 +39,99 @@ body {
   cursor: pointer;
 }
 
- .nav_btn:hover{
+.nav_btn:hover {
   background-color: #2f2f2f;
 }
 
-.test {
+.main_screen {
+  margin-top: 20px;
+}
+
+
+
+
+
+/* 사다리타기 */
+.ladder_txt_box,
+.ladder_bar_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+
+.ladder_txt {
   width: 100px;
-  height: 100px;
+  text-align: center;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+.ladder_txt:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.ladder_bar {
+  width: 4px;
+  height: 400px;
   background-color: #ffffff;
+}
+
+.ladder_side {
+  width: 114px;
+  /* border: 1px solid #ffffff; */
+}
+
+.option_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.count_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count_down_btn,
+.count_up_btn {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #1c1c1c;
+  font-size: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #1c1c1c;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.count_down_btn:hover,
+.count_up_btn:hover {
+  background-color: #dedede;
+}
+
+.start_btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  color: #1c1c1c;
+  font-size: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #1c1c1c;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.start_btn:hover {
+  background-color: #dedede;
 }
