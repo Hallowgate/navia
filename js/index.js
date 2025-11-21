@@ -1,9 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
     start();
     eventBind();
 });
 
-var count = 5;
+var Count = 5;
 
 function start() {
     $(".main_screen").load("html/ladder.html");
@@ -11,26 +11,39 @@ function start() {
 };
 
 function eventBind() {
-    $("#ladder").click(function() {
+    $("#ladder").click(function () {
         $(".tit_name").text("사다리타기");
         $(".main_screen").load("html/ladder.html");
     });
 
-    $("#mine").click(function() {
+    $("#mine").click(function () {
         $(".tit_name").text("지뢰찾기");
         $(".main_screen").load("html/mine.html");
     });
 
-    $("#dice").click(function() {
+    $("#dice").click(function () {
         $(".tit_name").text("랜덤주사위");
         $(".main_screen").load("html/dice.html");
     });
 
-    // $(".count_down_btn").click(function() {
-    // });
+    $(".count_down_btn").click(function () {
+        $(".count").text(`인원수 ${--Count}`);
+        if (Count <= 2) {
+            $(".count_down_btn").addClass(" disabled");
+        }else{
+            $(".count_up_btn").removeClass(" disabled");
+        }
+        
+    });
 
-    // $(".count_up_btn").click(function() {
-    // });
+    $(".count_up_btn").click(function () {
+        $(".count").text(`인원수 ${++Count}`);
+        if (Count >= 10) {
+            $(".count_up_btn").addClass(" disabled");
+        }else {
+            $(".count_down_btn").removeClass(" disabled");
+        }
+    });
 
 
     // 세로 막대 위의 텍스트 상자에는 기본적으로 placeholder를 통해 숫자를 입력해두고 그대로 진행 할 경우는 숫자가 value로 변경

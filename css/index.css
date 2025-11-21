@@ -5,6 +5,11 @@ body {
   -webkit-user-drag: none; /* 이미지 드래그 방지 (크롬/사파리) */
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
 .nav {
   height: 80px;
   display: flex;
