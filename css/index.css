@@ -1,8 +1,10 @@
 body {
   background-color: #1f1f1f;
   color: #ffffff;
-  user-select: none;   /* 텍스트 선택 방지 */
-  -webkit-user-drag: none; /* 이미지 드래그 방지 (크롬/사파리) */
+  user-select: none;
+  /* 텍스트 선택 방지 */
+  -webkit-user-drag: none;
+  /* 이미지 드래그 방지 (크롬/사파리) */
 }
 
 .disabled {
@@ -87,7 +89,15 @@ body {
 
 .ladder_side {
   width: 114px;
+  height: 350px;
   /* border: 1px solid #ffffff; */
+}
+
+.ladder_line {
+  position: relative;
+  width: 114px;
+  height: 4px;
+  background-color: #ffffff;
 }
 
 .option_bar {
