@@ -83,13 +83,13 @@ body {
 
 .ladder_bar {
   width: 4px;
-  height: 400px;
+  height: 500px;
   background-color: #ffffff;
 }
 
 .ladder_side {
   width: 114px;
-  height: 350px;
+  height: 470px;
   /* border: 1px solid #ffffff; */
 }
 
