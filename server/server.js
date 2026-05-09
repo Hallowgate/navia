@@ -28,7 +28,7 @@ console.log(process.env.LOSTARK_API_KEY);
 const watchItems = [
     {
         name: "운명의 파편 주머니(대)",
-        targetPrice: 600,
+        targetPrice: 550,
         categoryCode: 50000,
         condition: "up"
     },
