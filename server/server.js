@@ -28,21 +28,21 @@ console.log(process.env.LOSTARK_API_KEY);
 const watchItems = [
     {
         name: "운명의 파편 주머니(대)",
-        targetPrice: 1,
+        targetPrice: 600,
         categoryCode: 50000,
         condition: "up"
     },
 
     {
         name: "위대한 운명의 돌파석",
-        targetPrice: 1,
+        targetPrice: 45,
         categoryCode: 50000,
         condition: "up"
     },
 
     {
         name: "유물 예리한 둔기 각인서",
-        targetPrice: 160000,
+        targetPrice: 140000,
         categoryCode: 40000,
         condition: "down"
     }
